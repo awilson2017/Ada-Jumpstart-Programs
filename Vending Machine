@@ -25,6 +25,7 @@ puts "Welcome to Ada's Computer Candy Machine!
 
 How much money do ya got?"
 
+# Verify user money is a float and not a letter or special character
 begin
   user_money = Float(gets)
 rescue ArgumentError
@@ -43,6 +44,7 @@ D $0.65 Peanut Butter Cup
 E $0.55 Juicy Fruit Gum
 
 So, What'll ya have?"
+
 # customer makes selection, is it valid
 # upper and lower case selection
 user_selection = gets.chomp.upcase
