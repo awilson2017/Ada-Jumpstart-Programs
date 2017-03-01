@@ -50,7 +50,7 @@ So, What'll ya have?"
 user_selection = gets.chomp.upcase
 
 until candy_options.has_key?(user_selection) do
-  puts "enter a letter"
+  puts "Enter a valid letter"
   user_selection = gets.chomp.upcase
 end
 
