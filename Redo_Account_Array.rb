@@ -9,7 +9,7 @@ last_names = []
 student_ID_numbers = []
 student_emails = []
 
-number_students = 2
+number_students = 5
 
 # account generator
 number_students.times do
@@ -33,7 +33,6 @@ number_students.times do
   student_first_name.split(" ").map do |temp_name|
     firstNameinitials = firstNameinitials + temp_name.slice(0)
   end
-  puts firstNameinitials
 
   student_emails << firstNameinitials + student_last_name + id_number.to_s.slice(-3..-1) + "@ada.org"
 end
