@@ -34,7 +34,7 @@ end
 
 
 # present results
-puts "ELECTION RESULTS....
+puts "\n\nELECTION RESULTS....
 
 Vote Summary:"
 
