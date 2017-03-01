@@ -7,7 +7,7 @@
 # Total amount earned in the walk-a-thon
 # Whether or not the earning goal was met
 
-walker_num = 2
+walker_num = 5
 
 walker_earnings = Hash.new
 walker_earnings = {}
@@ -34,9 +34,7 @@ puts "Please enter the number of laps completed by each person."
   puts "Walker ##{x} Earned: $" + "%.2f" %amount_earned.to_s
   walker_earnings[x] = amount_earned
 end
-# puts "testing"
-# puts walker_earnings
-# puts "testing"
+
 # Have the walk-a-thon program calculate and output the following:
 # Who earned the most money
 winners = walker_earnings.select{|k, v| v == walker_earnings.values.max}.keys
@@ -59,7 +57,3 @@ else
   puts "We missed our goal by $#{"%.2f" %(0-total_minus_earning)} Boo"
 end
 
-# ========================================
-# Highest Earning Walker: #3
-# Total amount earned: $282.5
-# Goal Met? NO :-(
