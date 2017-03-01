@@ -26,11 +26,7 @@ number_students.times do  # http://stackoverflow.com/questions/38730400/ruby-how
   end
 
   # want to make email address in format awilson123@ada.org
-  # take first letter of each first name
-  # use entire last name
-  # last 3 digits of student_ID_numbers
-  # add @ada.org
-
+  
   firstNameinitials = ""
   student_first_name.split(" ").map do |temp_name|
     firstNameinitials = firstNameinitials + temp_name.slice(0)
