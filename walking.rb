@@ -35,16 +35,6 @@ puts "Please enter the number of laps completed by each person."
   walker_earnings[x] = amount_earned
 end
 
-# Have the walk-a-thon program calculate and output the following:
-# Who earned the most money
-winners = walker_earnings.select{|k, v| v == walker_earnings.values.max}.keys
-winner_speech = "\nHighest Earning Walker: "
-winners.each do |x|
-  winner_speech = winner_speech + "#{x} & "
-end
-
-puts winner_speech[0..-3]
-
 # Total amount earned in the walk-a-thon
 total_earned = walker_earnings.values.inject{|sum, x| sum + x}
 puts "Total amount earned: $#{"%.2f" %total_earned}"
