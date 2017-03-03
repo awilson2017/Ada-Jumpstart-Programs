@@ -31,12 +31,13 @@ puts "Please enter the number of laps completed by each person."
 (1..walker_num).each do |x|
   puts "\nWalker ##{x}: #{laps_walked = gets.chomp.to_i}"
   amount_earned = lap_amount * laps_walked
+  # print float only to two decimal points (http://stackoverflow.com/questions/10459901/how-do-you-round-a-float-to-two-decimal-places-in-jruby)
   puts "Walker ##{x} Earned: $" + "%.2f" %amount_earned.to_s
   walker_earnings[x] = amount_earned
 end
 
 # Total amount earned in the walk-a-thon
-# http://stackoverflow.com/questions/1538789/how-to-sum-array-of-numbers-in-ruby
+# Adding hash values (http://stackoverflow.com/questions/1538789/how-to-sum-array-of-numbers-in-ruby)
 total_earned = walker_earnings.values.inject{|sum, x| sum + x}
 puts "Total amount earned: $#{"%.2f" %total_earned}"
 
