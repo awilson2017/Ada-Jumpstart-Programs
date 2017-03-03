@@ -24,7 +24,8 @@ puts "Welcome to Ada's Computer Candy Machine!
 (All candy provided is virtual.)
 
 How much money do ya got?"
-# ask user for money and validate inout is number
+# ask user for money 
+# validate input is number (http://stackoverflow.com/questions/31410694/how-to-check-if-user-input-is-a-number)
 begin
   user_money = Float(gets)
 rescue ArgumentError
