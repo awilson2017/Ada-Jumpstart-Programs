@@ -36,6 +36,7 @@ puts "Please enter the number of laps completed by each person."
 end
 
 # Total amount earned in the walk-a-thon
+# http://stackoverflow.com/questions/1538789/how-to-sum-array-of-numbers-in-ruby
 total_earned = walker_earnings.values.inject{|sum, x| sum + x}
 puts "Total amount earned: $#{"%.2f" %total_earned}"
 
