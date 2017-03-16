@@ -1,13 +1,15 @@
-# Create a song time calculator program that accepts the following
-# input from the user for four different songs:
-# Name of the song
-# Length in seconds
-# Number of times the song has been played
-#
-# Have the song time calculator output the following:
-# Listening time for each song
-# Total listening time for all songs
-# Which song has been listened to the longest total amount of time
+# Primary Requirements
+  # Create a song time calculator program that accepts the following input from the user for four different songs:
+      # Name of the song
+      # Length in seconds
+      # Number of times the song has been played
+  # Have the song time calculator output the following:
+      # Listening time for each song
+      # Total listening time for all songs
+      # Which song has been listened to the longest total amount of time
+  # Respond to the following prompts about the code you have written:
+      # Describe something that you tried that didn't work and how you eventually fixed it
+      # Describe a situation where your code may not perform as you would like
 
 # The format of this section is a comment explaning the intention of my code, program code, and then a comment with what happened (control flow) for each major section of my program.
 
